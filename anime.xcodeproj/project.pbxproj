@@ -44,7 +44,6 @@
 		63D3310F28294ACC0054ECC4 = {
 			isa = PBXGroup;
 			children = (
-				63D3312F282950660054ECC4 /* splash */,
 				63D3311A28294ACC0054ECC4 /* anime */,
 				63D3311928294ACC0054ECC4 /* Products */,
 			);
@@ -61,6 +60,7 @@
 		63D3311A28294ACC0054ECC4 /* anime */ = {
 			isa = PBXGroup;
 			children = (
+				63D3312F282950660054ECC4 /* splash */,
 				63D3311B28294ACC0054ECC4 /* AppDelegate.swift */,
 				63D3311D28294ACC0054ECC4 /* SceneDelegate.swift */,
 				63D3311F28294ACC0054ECC4 /* ViewController.swift */,
