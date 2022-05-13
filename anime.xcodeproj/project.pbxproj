@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		638DCF77282E26F7009BBAE7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DCF76282E26F7009BBAE7 /* MainViewController.swift */; };
+		638DCF7A282E2FC9009BBAE7 /* AnimeTrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DCF79282E2FC9009BBAE7 /* AnimeTrendingTableViewCell.swift */; };
+		638DCF7D282E3B13009BBAE7 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 638DCF7C282E3B13009BBAE7 /* Nuke */; };
 		63D3311C28294ACC0054ECC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3311B28294ACC0054ECC4 /* AppDelegate.swift */; };
 		63D3311E28294ACC0054ECC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3311D28294ACC0054ECC4 /* SceneDelegate.swift */; };
-		63D3312028294ACC0054ECC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3311F28294ACC0054ECC4 /* ViewController.swift */; };
 		63D3312328294ACC0054ECC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D3312128294ACC0054ECC4 /* Main.storyboard */; };
 		63D3312528294ACF0054ECC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D3312428294ACF0054ECC4 /* Assets.xcassets */; };
 		63D3312828294ACF0054ECC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D3312628294ACF0054ECC4 /* LaunchScreen.storyboard */; };
@@ -18,10 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		638DCF76282E26F7009BBAE7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		638DCF79282E2FC9009BBAE7 /* AnimeTrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTrendingTableViewCell.swift; sourceTree = "<group>"; };
 		63D3311828294ACC0054ECC4 /* anime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D3311B28294ACC0054ECC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D3311D28294ACC0054ECC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63D3311F28294ACC0054ECC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		63D3312228294ACC0054ECC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63D3312428294ACF0054ECC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63D3312728294ACF0054ECC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,12 +38,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				638DCF7D282E3B13009BBAE7 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		638DCF78282E2791009BBAE7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				63D3312128294ACC0054ECC4 /* Main.storyboard */,
+				638DCF76282E26F7009BBAE7 /* MainViewController.swift */,
+				638DCF79282E2FC9009BBAE7 /* AnimeTrendingTableViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		63D3310F28294ACC0054ECC4 = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +74,10 @@
 		63D3311A28294ACC0054ECC4 /* anime */ = {
 			isa = PBXGroup;
 			children = (
+				638DCF78282E2791009BBAE7 /* Main */,
 				63D3312F282950660054ECC4 /* splash */,
 				63D3311B28294ACC0054ECC4 /* AppDelegate.swift */,
 				63D3311D28294ACC0054ECC4 /* SceneDelegate.swift */,
-				63D3311F28294ACC0054ECC4 /* ViewController.swift */,
-				63D3312128294ACC0054ECC4 /* Main.storyboard */,
 				63D3312428294ACF0054ECC4 /* Assets.xcassets */,
 				63D3312628294ACF0054ECC4 /* LaunchScreen.storyboard */,
 				63D3312928294ACF0054ECC4 /* Info.plist */,
@@ -97,6 +110,9 @@
 			dependencies = (
 			);
 			name = anime;
+			packageProductDependencies = (
+				638DCF7C282E3B13009BBAE7 /* Nuke */,
+			);
 			productName = anime;
 			productReference = 63D3311828294ACC0054ECC4 /* anime.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 63D3310F28294ACC0054ECC4;
+			packageReferences = (
+				638DCF7B282E3B13009BBAE7 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 63D3311928294ACC0054ECC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,10 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63D3312028294ACC0054ECC4 /* ViewController.swift in Sources */,
 				63D3311C28294ACC0054ECC4 /* AppDelegate.swift in Sources */,
 				63D3311E28294ACC0054ECC4 /* SceneDelegate.swift in Sources */,
+				638DCF7A282E2FC9009BBAE7 /* AnimeTrendingTableViewCell.swift in Sources */,
 				63D33131282950910054ECC4 /* SplashViewController.swift in Sources */,
+				638DCF77282E26F7009BBAE7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +396,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		638DCF7B282E3B13009BBAE7 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = exactVersion;
+				version = 9.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		638DCF7C282E3B13009BBAE7 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 638DCF7B282E3B13009BBAE7 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63D3311028294ACC0054ECC4 /* Project object */;
 }
