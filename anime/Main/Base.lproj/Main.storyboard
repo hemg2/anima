@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RcU-eW-i9s">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Anima-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="anime" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UBK-7W-FB3">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnimeTrendingTableViewCell" rowHeight="178" id="B96-mw-bdm" customClass="AnimeTrendingTableViewCell" customModule="anime" customModuleProvider="target">
@@ -40,7 +40,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우린 국가와 국민에 충성을다하는 대한민국 육군이다" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tV9-Z9-cG1">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우린 국가와 국민에 충성을다하는 대한민국 육군이다" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tV9-Z9-cG1">
                                                     <rect key="frame" x="130.5" y="52" width="243.5" height="41"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -81,16 +81,119 @@
                             <constraint firstItem="UBK-7W-FB3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mhf-19-yxR"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Anima" image="ticket" catalog="system" id="aBS-vw-aM8"/>
                     <connections>
                         <outlet property="tableView" destination="UBK-7W-FB3" id="pwU-tp-U61"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
+        </scene>
+        <!--Manga-->
+        <scene sceneID="t4i-9Q-0QK">
+            <objects>
+                <viewController id="3HR-gT-FRr" customClass="MangaViewController" customModule="anime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ekj-bm-eJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JD7-gJ-irP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnimeTrendingTableViewCell" rowHeight="178" id="ZPh-gp-j6n" customClass="AnimeTrendingTableViewCell" customModule="anime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="178"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZPh-gp-j6n" id="PAy-Ei-zYy">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="178"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2UT-LD-AfK">
+                                                    <rect key="frame" x="20" y="20" width="94.5" height="138"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="EUD-8b-l5b"/>
+                                                        <constraint firstAttribute="width" secondItem="2UT-LD-AfK" secondAttribute="height" multiplier="484:706" id="N0z-QU-If8"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우리의 결의" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEg-fR-GN6">
+                                                    <rect key="frame" x="130.5" y="20" width="243.5" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우린 국가와 국민에 충성을다하는 대한민국 육군이다" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afu-pR-t2r">
+                                                    <rect key="frame" x="130.5" y="52" width="243.5" height="41"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="qEg-fR-GN6" secondAttribute="trailing" constant="20" id="0pk-fQ-6hS"/>
+                                                <constraint firstItem="2UT-LD-AfK" firstAttribute="leading" secondItem="PAy-Ei-zYy" secondAttribute="leading" constant="20" id="8Os-9N-LDN"/>
+                                                <constraint firstItem="afu-pR-t2r" firstAttribute="trailing" secondItem="qEg-fR-GN6" secondAttribute="trailing" id="AiO-fa-j0c"/>
+                                                <constraint firstAttribute="bottom" secondItem="2UT-LD-AfK" secondAttribute="bottom" constant="20" id="DJv-6D-0Hh"/>
+                                                <constraint firstItem="afu-pR-t2r" firstAttribute="leading" secondItem="qEg-fR-GN6" secondAttribute="leading" id="Ius-gF-FuM"/>
+                                                <constraint firstItem="qEg-fR-GN6" firstAttribute="leading" secondItem="2UT-LD-AfK" secondAttribute="trailing" constant="16" id="Nhl-68-PDv"/>
+                                                <constraint firstItem="2UT-LD-AfK" firstAttribute="top" secondItem="PAy-Ei-zYy" secondAttribute="top" constant="20" id="QlR-ws-LnF"/>
+                                                <constraint firstItem="qEg-fR-GN6" firstAttribute="top" secondItem="2UT-LD-AfK" secondAttribute="top" id="pB0-uC-gTS"/>
+                                                <constraint firstItem="afu-pR-t2r" firstAttribute="top" secondItem="qEg-fR-GN6" secondAttribute="bottom" constant="8" id="zqZ-9r-ql7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="animePosterImage" destination="2UT-LD-AfK" id="Hb2-RS-fot"/>
+                                            <outlet property="animeSynopsisLable" destination="afu-pR-t2r" id="VZa-ol-Uin"/>
+                                            <outlet property="animeTitleLabel" destination="qEg-fR-GN6" id="kuK-Lu-fgc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3HR-gT-FRr" id="6QZ-27-CFk"/>
+                                    <outlet property="delegate" destination="3HR-gT-FRr" id="EcB-By-GjW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eOD-aw-OkD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eOD-aw-OkD" firstAttribute="trailing" secondItem="JD7-gJ-irP" secondAttribute="trailing" id="ZkN-vH-4it"/>
+                            <constraint firstAttribute="bottom" secondItem="JD7-gJ-irP" secondAttribute="bottom" id="pbj-CC-zN6"/>
+                            <constraint firstItem="JD7-gJ-irP" firstAttribute="leading" secondItem="ekj-bm-eJ3" secondAttribute="leading" id="uqD-GL-Ojf"/>
+                            <constraint firstItem="JD7-gJ-irP" firstAttribute="top" secondItem="eOD-aw-OkD" secondAttribute="top" id="vkM-Eb-1zR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Manga" image="book" catalog="system" id="OM0-e7-TYT"/>
+                    <connections>
+                        <outlet property="tableView" destination="JD7-gJ-irP" id="8GX-Hb-3dl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BVN-j0-MzO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="790"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="gm8-ph-hpv">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RcU-eW-i9s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sE3-Lp-iMh">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="3fP-pr-7ZK"/>
+                        <segue destination="3HR-gT-FRr" kind="relationship" relationship="viewControllers" id="lXV-HW-82F"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T4h-fC-PqU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
     </scenes>
     <resources>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="ticket" catalog="system" width="128" height="84"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

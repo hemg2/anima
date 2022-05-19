@@ -12,6 +12,12 @@ class AnimeTrendingTableViewCell: UITableViewCell {
     @IBOutlet weak var animeTitleLabel: UILabel!
     @IBOutlet weak var animeSynopsisLable: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        animePosterImage.layer.cornerRadius = 15
+        animePosterImage.layer.borderColor = UIColor.black.cgColor
+        animePosterImage.layer.borderWidth = 1
+    }
 
 }
 

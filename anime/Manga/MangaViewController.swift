@@ -1,23 +1,21 @@
 //
-//  MainViewController.swift
+//  MangaViewController.swift
 //  anime
 //
-//  Created by 1 on 2022/05/13.
-// 오타좀 봐라 박현중
-// 오타 봐라
-
-import UIKit
-import Nuke
+//  Created by 1 on 2022/05/19.
+//
 import Alamofire
+import Nuke
+import UIKit
 
-class MainViewController: UIViewController {
+class MangaViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var modle: AnimeModle?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AF.request("https://kitsu.io/api/edge/anime").response { response in
+        AF.request("https://kitsu.io/api/edge/manga").response { response in
             guard let data = response.data else { return }
             let modle = try! JSONDecoder().decode(AnimeModle.self, from: data)
             self.modle = modle
@@ -26,7 +24,8 @@ class MainViewController: UIViewController {
     }
 }
 
-extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+
+extension MangaViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return modle?.data.count ?? 0
     }
@@ -61,4 +60,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
 }
+    
+
 
