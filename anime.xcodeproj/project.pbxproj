@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		63328DA228368AC600A0D909 /* AnimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63328DA128368AC600A0D909 /* AnimeModel.swift */; };
 		63328DA528368E3500A0D909 /* MangaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63328DA428368E3500A0D909 /* MangaViewController.swift */; };
+		63564808283BCAF00048BE6F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63564807283BCAF00048BE6F /* DetailViewController.swift */; };
 		638DCF77282E26F7009BBAE7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DCF76282E26F7009BBAE7 /* MainViewController.swift */; };
 		638DCF7A282E2FC9009BBAE7 /* AnimeTrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638DCF79282E2FC9009BBAE7 /* AnimeTrendingTableViewCell.swift */; };
 		638DCF7D282E3B13009BBAE7 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 638DCF7C282E3B13009BBAE7 /* Nuke */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		63328DA128368AC600A0D909 /* AnimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeModel.swift; sourceTree = "<group>"; };
 		63328DA428368E3500A0D909 /* MangaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaViewController.swift; sourceTree = "<group>"; };
+		63564807283BCAF00048BE6F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		638DCF76282E26F7009BBAE7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		638DCF79282E2FC9009BBAE7 /* AnimeTrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTrendingTableViewCell.swift; sourceTree = "<group>"; };
 		63D3311828294ACC0054ECC4 /* anime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 				63328DA128368AC600A0D909 /* AnimeModel.swift */,
 				638DCF76282E26F7009BBAE7 /* MainViewController.swift */,
 				638DCF79282E2FC9009BBAE7 /* AnimeTrendingTableViewCell.swift */,
+				63564807283BCAF00048BE6F /* DetailViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				63328DA228368AC600A0D909 /* AnimeModel.swift in Sources */,
 				63328DA528368E3500A0D909 /* MangaViewController.swift in Sources */,
 				638DCF77282E26F7009BBAE7 /* MainViewController.swift in Sources */,
+				63564808283BCAF00048BE6F /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

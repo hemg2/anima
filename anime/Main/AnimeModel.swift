@@ -14,6 +14,9 @@ struct AnimePosterImage: Codable {
     let large: String
     let original: String
 }
+struct animacoverimage: Codable{
+    let large : String
+}
 
 struct Animeattributes: Codable {
     let createdAt: String
@@ -22,6 +25,7 @@ struct Animeattributes: Codable {
     let synopsis: String
     let canonicalTitle: String
     let posterImage: AnimePosterImage
+    let coverImage: animacoverimage?
 }
 struct Animalinks: Codable {
     let next: String
